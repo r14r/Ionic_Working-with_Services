@@ -1,0 +1,76 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-back-button router-direction="backword"></ion-back-button>
+		</ion-buttons>
+
+		<ion-title>Details for {{ item?.name }}</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+
+      <ion-col>{{ item?.key }}</ion-col>
+      <ion-col>{{ item?.val }}</ion-col>
+    </ion-item>
+
+  </ion-list>
+
+    <ion-grid>
+        <ion-row><ion-col>name</ion-col><ion-col>{{ item?.name }}</ion-col></ion-row>
+        <ion-row><ion-col>topLevelDomain</ion-col><ion-col>{{ item?.topLevelDomain }}</ion-col></ion-row>
+        <ion-row><ion-col>alpha2Code</ion-col><ion-col>{{ item?.alpha2Code }}</ion-col></ion-row>
+        <ion-row><ion-col>alpha3Code</ion-col><ion-col>{{ item?.alpha3Code }}</ion-col></ion-row>
+        <ion-row><ion-col>callingCodes</ion-col><ion-col>{{ item?.callingCodes }}</ion-col></ion-row>
+        <ion-row><ion-col>capital</ion-col><ion-col>{{ item?.capital }}</ion-col></ion-row>
+        <ion-row><ion-col>altSpellings</ion-col><ion-col>{{ item?.altSpellings }}</ion-col></ion-row>
+        <ion-row><ion-col>region</ion-col><ion-col>{{ item?.region }}</ion-col></ion-row>
+        <ion-row><ion-col>subregion</ion-col><ion-col>{{ item?.subregion }}</ion-col></ion-row>
+        <ion-row><ion-col>population</ion-col><ion-col>{{ item?.population }}</ion-col></ion-row>
+        <ion-row><ion-col>latlng</ion-col><ion-col>{{ item?.latlng }}</ion-col></ion-row>
+        <ion-row><ion-col>demonym</ion-col><ion-col>{{ item?.demonym }}</ion-col></ion-row>
+        <ion-row><ion-col>area</ion-col><ion-col>{{ item?.area }}</ion-col></ion-row>
+        <ion-row><ion-col>gini</ion-col><ion-col>{{ item?.gini }}</ion-col></ion-row>
+        <ion-row><ion-col>timezones</ion-col><ion-col>{{ item?.timezones }}</ion-col></ion-row>
+
+        <ion-row><ion-col>borders</ion-col><ion-col>{{ item?.borders }}</ion-col></ion-row>
+        <ion-row><ion-col>nativeName</ion-col><ion-col>{{ item?.nativeName }}</ion-col></ion-row>
+        <ion-row><ion-col>numericCode</ion-col><ion-col>{{ item?.numericCode }}</ion-col></ion-row>
+        <ion-row><ion-col>currencies</ion-col><ion-col>{{ item?.currencies }}</ion-col></ion-row>
+        <ion-row><ion-col>code</ion-col><ion-col>{{ item?.code }}</ion-col></ion-row>
+        <ion-row><ion-col>name</ion-col><ion-col>{{ item?.name }}</ion-col></ion-row>
+        <ion-row><ion-col>symbol</ion-col><ion-col>{{ item?.symbol }}</ion-col></ion-row>
+
+        <ion-row><ion-col>languages</ion-col><ion-col>{{ item?.languages }}</ion-col></ion-row>
+        <ion-row><ion-col>iso639_1</ion-col><ion-col>{{ item?.iso639_1 }}</ion-col></ion-row>
+        <ion-row><ion-col>iso639_2</ion-col><ion-col>{{ item?.iso639_2 }}</ion-col></ion-row>
+        <ion-row><ion-col>name</ion-col><ion-col>{{ item?.name }}</ion-col></ion-row>
+        <ion-row><ion-col>nativeName</ion-col><ion-col>{{ item?.nativeName }}</ion-col></ion-row>
+
+        <ion-row><ion-col>translations</ion-col><ion-col>{{ item?.translations }}</ion-col></ion-row>
+        <ion-row><ion-col>de</ion-col><ion-col>{{ item?.de }}</ion-col></ion-row>
+        <ion-row><ion-col>es</ion-col><ion-col>{{ item?.es }}</ion-col></ion-row>
+        <ion-row><ion-col>fr</ion-col><ion-col>{{ item?.fr }}</ion-col></ion-row>
+        <ion-row><ion-col>ja</ion-col><ion-col>{{ item?.ja }}</ion-col></ion-row>
+        <ion-row><ion-col>it</ion-col><ion-col>{{ item?.it }}</ion-col></ion-row>
+        <ion-row><ion-col>br</ion-col><ion-col>{{ item?.br }}</ion-col></ion-row>
+        <ion-row><ion-col>pt</ion-col><ion-col>{{ item?.pt }}</ion-col></ion-row>
+
+        <ion-row><ion-col>flag</ion-col><ion-col>{{ item?.flag }}</ion-col></ion-row>
+        <ion-row><ion-col>regionalBlocs</ion-col><ion-col>{{ item?.regionalBlocs }}</ion-col></ion-row>
+        <ion-row><ion-col>acronym</ion-col><ion-col>{{ item?.acronym }}</ion-col></ion-row>
+        <ion-row><ion-col>name</ion-col><ion-col>{{ item?.name }}</ion-col></ion-row>
+        <ion-row><ion-col>otherAcronyms</ion-col><ion-col>{{ item?.otherAcronyms }}</ion-col></ion-row>
+        <ion-row><ion-col>otherNames</ion-col><ion-col>{{ item?.otherNames }}</ion-col></ion-row>
+
+        <ion-row><ion-col>acronym</ion-col><ion-col>{{ item?.acronym }}</ion-col></ion-row>
+        <ion-row><ion-col>name</ion-col><ion-col>{{ item?.name }}</ion-col></ion-row>
+        <ion-row><ion-col>otherAcronyms</ion-col><ion-col>{{ item?.otherAcronyms }}</ion-col></ion-row>
+        <ion-row><ion-col>otherNames</ion-col><ion-col>{{ item?.otherNames }}</ion-col></ion-row>
+
+        <ion-row><ion-col>cioc</ion-col><ion-col>{{ item?.cioc }}</ion-col></ion-row>
+
+    </ion-grid>
+</ion-content>

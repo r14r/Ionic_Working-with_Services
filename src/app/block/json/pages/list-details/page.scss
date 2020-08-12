@@ -1,0 +1,16 @@
+ion-content {
+
+}
+
+ion-grid {
+	border: 1px 1px 1px 1px;
+	border-color: #bbbbbb;
+}
+
+ion-row[isOdd='true'] > div.item-content{
+    background-color: yellow !important;
+}
+
+ion-row[isOdd='false'] > div.item-content{
+    background-color: orange !important;
+}

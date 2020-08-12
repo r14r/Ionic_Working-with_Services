@@ -1,0 +1,23 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-back-button router-direction="backword"></ion-back-button>
+		</ion-buttons>
+
+		<ion-title>Details for {{ item?.title }}</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+	<h1>
+		<img [src]="flag" alt="{{ item?.name }}">
+		{{ item?.name }}
+	</h1>
+	<ion-list>
+		<ion-item *ngFor="let item of items, let i = index">
+			<ion-col>{{ item?.key }}</ion-col>
+			<ion-col>{{ item?.val }}</ion-col>
+		</ion-item>
+
+	</ion-list>
+</ion-content>

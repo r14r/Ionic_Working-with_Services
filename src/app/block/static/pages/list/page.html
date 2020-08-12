@@ -1,0 +1,33 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-title>
+			List from Static Data
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-card>
+		<ion-card-header>
+			<ion-card-title>Static Array</ion-card-title>
+			<ion-card-subtitle>Working with a static array of items</ion-card-subtitle>
+		</ion-card-header>
+
+		<ion-card-content>
+			Get the date from a static array. Elements defined and array filled up on runtime.
+
+			<ion-item *ngFor="let item of items, let i=index" class="activated" (click)="navigateTo(item)">
+				<ion-icon [name]="item.icon" slot="start"></ion-icon>
+				{{item.title}}
+				<div class="item-note" slot="end">
+					{{item.note}}
+				</div>
+			</ion-item>
+		</ion-card-content>
+
+	</ion-card>
+
+</ion-content>
